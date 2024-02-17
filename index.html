@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather API</title>
+  <link rel="shortcut icon" class="documenticon" href="a.jpg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" media="screen and (max-width:900px)" href="phone.css" />
+</head>
+
+<body>
+  <header>
+    <div class="img">
+      <img src="a.jpg" alt="image loading" />
+      <div>
+        <h1 class="nav-h1">Weather API</h1>
+      </div>
+    </div>
+    <ul id="ul">
+      <li class="li"><a href="#">Home</a></li>
+      <li class="li"><a href="#">About Us</a></li>
+      <li class="li"><a href="#">Contect Us</a></li>
+      <li class="li"><a href="#footer">Services</a></li>
+    </ul>
+    <form action="#">
+      <input type="text" onkeydown="myFunction2()" id="text" />
+      <input type="button" onclick="myFunction2()" value="search" />
+    </form>
+    <div class="icon" onclick="myFunction()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <!-- <div class="line"></div> -->
+    </div>
+  </header>
+  <section class="main">
+    <h1>Weather of <span id="cityname">Delhi</span></h1>
+    <div class="maindiv">
+      <div class="box">
+        <h3>Temprature</h3>
+        <div class="boxdiv">
+          <h1 id="temp"></h1>
+          <p>Temprature is <span id="temp2"></span></p>
+          <p>Mininum temprature <span id="min_temp"></span></p>
+          <p>Maximun temprature <span id="max_temp"></span></p>
+        </div>
+        <input type="button" class="lastbutton" value="Button" />
+      </div>
+      <div class="box">
+        <h3>Humidity info</h3>
+        <div class="boxdiv">
+          <h1 id="humidity"></h1>
+          <p>Wind degrees <span id="wind_degrees"></span></p>
+          <p>Feels like <span id="feels_like"></span></p>
+          <p>Humidity <span id="humidity2"></span></p>
+        </div>
+        <input type="button" class="lastbutton" value="Button" />
+      </div>
+      <div class="box">
+        <h3>Wind Info</h3>
+        <div class="boxdiv">
+          <h1 id="wind_speed"></h1>
+          <p>Wind speed <span id="wind_speed2"></span></p>
+          <p>Sun rise <span id="sunrise"></span></p>
+          <p>Sun set <span id="sunset"></span></p>
+        </div>
+        <input type="button" class="lastbutton" value="Button" />
+      </div>
+    </div>
+  </section>
+
+  <section class="footer" id="footer"></section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
